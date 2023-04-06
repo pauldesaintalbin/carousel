@@ -3,7 +3,7 @@
     font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 .carousel {
-    width: 50vw; /* adjust the width and height of the slider */
+    width: 100%; /* adjust the width and height of the slider */
     position: relative;
 }
 .images-container {
