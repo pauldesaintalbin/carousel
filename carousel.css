@@ -1,0 +1,101 @@
+/* Material Icons */
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+.carousel {
+    width: 50vw; /* adjust the width and height of the slider */
+    position: relative;
+}
+.images-container {
+    height: 100%;
+    position: relative;
+    scroll-snap-type: x mandatory;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    scroll-behavior: smooth;
+}
+.carousel .image-container {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    scroll-snap-align: start;
+}
+.carousel img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* if your image doesn't exist, the alternative text will be white */
+    font-family: sans-serif;
+}
+.dots-container,
+.arrows-container {
+    position: absolute;
+    bottom: 8px;
+    border-radius: 2534px;
+    background: #303034;
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    align-items: center;
+}
+.dots-container {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    padding: 8px;
+}
+.arrows-container .arrow {
+    color: #acaaaf;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+.arrows-container {
+    padding: 16px;
+}
+.image-number-indicator {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    height: max-content;
+    color: #acaaaf;
+    font-size: 16px;
+}
+
+.dots-container div {
+    width: 8px;
+    height: 8px;
+    background: #77767a;
+    border-radius: 346px;
+    transition: 0.3s;
+}
+
+.dots-container .selected {
+    background: #acaaaf;
+}
+/* desktop version */
+@media (hover: hover) {
+    .dots-container {
+        display: none;
+    }
+}
+/* touch screen version */
+@media (hover: none) {
+    .arrows-container {
+        display: none;
+    }
+    .images-container {
+        overflow-x: auto;
+    }
+}

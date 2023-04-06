@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- links the styles to your page -->
+        <link rel="stylesheet" href="carousel.css" />
+        <!-- imports Material Symbols for the arrows (desktop version) -->
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <!-- imports the Roboto font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- you can put multiple carousels in the same page -->
+        <!-- to insert a carousel in your HTML page, copy and paste the
+        whole carousel div, from line 25 to line 59 -->
+        <div class="carousel">
+            <div class="images-container">
+                <!-- You can put the number of images you want -->
+                <div class="image-container">
+                    <img
+                        src="images/image 1.jpg"
+                        alt="description of the first image"
+                    />
+                </div>
+                <div class="image-container">
+                    <img
+                        src="images/image 2.jpg"
+                        alt="description of the second image"
+                    />
+                </div>
+                <div class="image-container">
+                    <img
+                        src="images/image 3.jpg"
+                        alt="description of the third image"
+                    />
+                </div>
+                <div class="image-container">
+                    <img
+                        src="images/image 4.png"
+                        alt="description of the third image"
+                    />
+                </div>
+                <!-- If you want to add more images, you just have to duplicate one the elements
+                <div class="image-container"> with its content -->
+            </div>
+            <!-- contains the dots that indicate the position of the
+            image you are currently seeing (touch screen version) -->
+            <div class="dots-container"></div>
+            <!-- contains the left and right arrows and the number of the
+            image you are currently seeing (desktop version)-->
+            <div class="arrows-container">
+                <button class="material-symbols-outlined left-arrow arrow">
+                    arrow_back
+                </button>
+                <span class="image-number-indicator"></span>
+                <button class="material-symbols-outlined right-arrow arrow">
+                    arrow_forward
+                </button>
+            </div>
+        </div>
+        <!-- imports the JavaScript file (copy this line at the
+        end of your HTML page (just before "</body>")) -->
+        <script src="carousel.js"></script>
+    </body>
+</html>
